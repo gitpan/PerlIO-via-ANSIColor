@@ -1,0 +1,15 @@
+--- #YAML:1.0
+name:                PerlIO-via-ANSIColor
+version:             0.01
+abstract:            PerlIO layer for Term::ANSIColor
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.36
+distribution_type:   module
+requires:     
+    Term::ANSIColor:               0
+    Test::More:                    0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Masanori Hara <massa.hara at gmail.com>
