@@ -3,3 +3,5 @@ Revision history for PerlIO-via-ANSIColor
 0.0.1  Thu Jul 19 20:54:39 2007
        Initial release.
 
+0.0.2  Fri Jul 20 19:26:17 2007
+       Changed t/perlctiric.t skip test when there is no Test::Perl::Critic.

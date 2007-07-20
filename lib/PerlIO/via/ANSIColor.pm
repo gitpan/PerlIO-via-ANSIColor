@@ -4,7 +4,7 @@ use strict;
 use warnings;
 require Term::ANSIColor;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 my $color = 'red';
 my $reset = Term::ANSIColor::color('reset');
 
@@ -61,7 +61,7 @@ PerlIO::via::ANSIColor - PerlIO layer for Term::ANSIColor
 
 =head1 VERSION
 
-This document describes PerlIO::via::ANSIColor version 0.0.1
+This document describes PerlIO::via::ANSIColor version 0.0.2
 
 
 =head1 SYNOPSIS
