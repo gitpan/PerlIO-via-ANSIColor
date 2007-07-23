@@ -4,7 +4,7 @@ use strict;
 use warnings;
 require Term::ANSIColor;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 my $color = 'red';
 my $reset = Term::ANSIColor::color('reset');
 
@@ -61,7 +61,7 @@ PerlIO::via::ANSIColor - PerlIO layer for Term::ANSIColor
 
 =head1 VERSION
 
-This document describes PerlIO::via::ANSIColor version 0.0.2
+This document describes PerlIO::via::ANSIColor version 0.0.3
 
 
 =head1 SYNOPSIS
@@ -111,18 +111,33 @@ If new color is specified, try to change color before binmode.
 
 Here are some examples.
 
-=head2 adds reverse green color to STDERR
+=head2 Adds reverse green color to STDERR
 
     use PerlIO::via::ANSIColor color => 'reverse green';
     binmode STDERR, ':via(ANSIColor)';
 
     warn "this outputs is colored\n";
 
-=head2 print text from 'filein' with bule color
+=head2 Print text from 'filein' with bule color
 
     use PerlIO::via::ANSIColor color => 'blue';
     open my $fh, '<:via(ANSIColor)', 'filein';
     print while <$fh>;
+
+=head2 Multiple filehandles
+
+    use PerlIO::via::ANSIColor;
+
+    PerlIO::via::ANSIColor->color('reverse red');
+    open my $redfh, ">&STDOUT" or die $!;
+    binmode $redfh, ':via(ANSIColor)';
+
+    PerlIO::via::ANSIColor->color('reverse blue');
+    open my $bluefh, ">&STDOUT" or die $!;
+    binmode $bluefh, ':via(ANSIColor)';
+
+    print $redfh  "this color is reverse red\n";
+    print $bluefh "this color is reverse blue\n";
 
 
 =head1 DEPENDENCIES

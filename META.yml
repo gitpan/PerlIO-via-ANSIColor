@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                PerlIO-via-ANSIColor
-version:             0.02
+version:             0.03
 abstract:            PerlIO layer for Term::ANSIColor
 license:             ~
 generated_by:        ExtUtils::MakeMaker version 6.36
