@@ -4,7 +4,7 @@ use strict;
 use warnings;
 require Term::ANSIColor;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 my $color = 'red';
 my $reset = Term::ANSIColor::color('reset');
 
@@ -46,7 +46,14 @@ sub FILL {
 
 sub WRITE {
     my $color = $_[0]->{color};
-    print { $_[2] } $color . $_[1] . $reset or return -1;
+    my $str   = $_[1];
+    if ($str =~ /\n$/ ) {
+        chomp $str;
+        print { $_[2] } $color . $str . $reset . "\n" or return -1;
+    }
+    else {
+        print { $_[2] } $color . $_[1] . $reset or return -1;
+    }
     length $_[1];
 }
 

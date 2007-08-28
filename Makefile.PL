@@ -9,6 +9,7 @@ WriteMakefile(
     VERSION_FROM        => 'lib/PerlIO/via/ANSIColor.pm',
     ABSTRACT_FROM       => 'lib/PerlIO/via/ANSIColor.pm',
     PL_FILES            => {},
+    LICENSE             => 'perl',
     PREREQ_PM => {
         'Test::More'      => 0,
         'Term::ANSIColor' => 0,

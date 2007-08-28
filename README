@@ -1,4 +1,4 @@
-PerlIO-via-ANSIColor version 0.0.3
+PerlIO-via-ANSIColor version 0.0.4
 
 This module implements a PerlIO layer that adds color to the text
 using Term::ANSIColor.
