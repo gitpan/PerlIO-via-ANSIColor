@@ -1,4 +1,4 @@
-PerlIO-via-ANSIColor version 0.0.4
+PerlIO-via-ANSIColor version 0.05
 
 This module implements a PerlIO layer that adds color to the text
 using Term::ANSIColor.
@@ -29,7 +29,7 @@ This module requires Term::ANSIColor.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2007, Masanori Hara
+Copyright (C) 2007-2011, Masanori Hara
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

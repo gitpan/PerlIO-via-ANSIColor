@@ -4,7 +4,7 @@ use strict;
 use warnings;
 require Term::ANSIColor;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 my $color = 'red';
 my $reset = Term::ANSIColor::color('reset');
 
@@ -171,7 +171,7 @@ Masanori Hara  C<< <massa.hara at gmail.com> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2007, Masanori Hara C<< <massa.hara at gmail.com> >>.
+Copyright (c) 2007-2011, Masanori Hara C<< <massa.hara at gmail.com> >>.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
